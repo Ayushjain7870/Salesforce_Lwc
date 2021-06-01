@@ -1,0 +1,69 @@
+ -----------------------HTML---------------------------
+
+
+<template>
+    <lightning-card>
+        <lightning-record-view-form
+        object-api-name={objectApiName}
+        record-id={recordId}>
+        <lightning-messages></lightning-messages>
+        <lightning-output-field field-name={oppName}></lightning-output-field>        
+        <lightning-output-field field-name={oppStage}></lightning-output-field>
+        </lightning-record-view-form>
+    </lightning-card>   
+</template>
+
+
+ -----------------------JS---------------------------
+ 
+ 
+ import { LightningElement, api, wire } from 'lwc';
+
+import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
+
+//Opportunity
+import OPPORTUNITY_OBJECT from '@salesforce/schema/Opportunity';
+import OPP_NAME from '@salesforce/schema/Opportunity.Name';
+import OPP_STAGE from '@salesforce/schema/Opportunity.StageName';
+
+export default class GetOpportunityFields extends LightningElement {
+
+    objectApiName = OPPORTUNITY_OBJECT;
+    oppName = OPP_NAME;
+    oppStage = OPP_STAGE;
+
+    @api recordId;
+    @api objectApiName; 
+
+   
+    @wire(getRecord, {
+        recordId: "$recordId",
+        fields: [OPP_NAME, OPP_STAGE]
+      })
+      record;
+
+      get oppName() {
+        return this.record.data
+          ? getFieldValue(this.record.data, OPP_NAME)
+          : "";
+      }
+      get oppStage() {
+        return this.record.data
+          ? getFieldValue(this.record.data, OPP_STAGE)
+          : "";
+      }
+}
+
+
+
+----------------XML------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+</LightningComponentBundle>
