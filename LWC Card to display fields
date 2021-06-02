@@ -1,0 +1,139 @@
+<template>
+	<lightning-card title="Personal">
+		<div class="slds-form" role="list">
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">First Name</label></strong>
+						<label class="slds-form-element__label">Your Name</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Last Name</label></strong>
+						<label class="slds-form-element__label">My Name</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Birthdate</label></strong>
+						<label class="slds-form-element__label">Equal to you</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Phone</label></strong>
+						<label class="slds-form-element__label">9879879879</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Email</label></strong>
+						<label class="slds-form-element__label">Email kyun batau</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Baki fields dal lena yr</label></strong>
+						<label class="slds-form-element__label">smjhe?</label>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</lightning-card>
+	<lightning-card title="Business">
+		<div class="slds-form" role="list">
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">First Name</label></strong>
+						<label class="slds-form-element__label">Your Name</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Last Name</label></strong>
+						<label class="slds-form-element__label">My Name</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Birthdate</label></strong>
+						<label class="slds-form-element__label">Equal to you</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Phone</label></strong>
+						<label class="slds-form-element__label">9879879879</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Email</label></strong>
+						<label class="slds-form-element__label">Email kyun batau</label>
+					</div>
+				</div>
+			</div>
+
+			<!--Add row for each element-->
+			<div class="slds-form__row">
+				<div class="slds-form__item" role="listitem">
+					<div class="slds-form-element slds-form-element_horizontal slds-align-absoulte-center">
+						<strong><label class="slds-form-element__label">Baki fields dal lena yr</label></strong>
+						<label class="slds-form-element__label">smjhe?</label>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</lightning-card>
+
+</template>
